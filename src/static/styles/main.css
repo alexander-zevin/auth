@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0 !important;
+}
+
+body {
+    background: rgb(224,235,245);
+    font-family: Snell Roundhand, cursive;
+}
+
+.titleBlock {
+    position: absolute;
+    height: 5%;
+    width: 20%;
+    top: 17%;
+    left: 40%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 18pt;
+}
+
+.blockSign {
+    position: absolute;
+    height: 50%;
+    width: 20%;
+    top: 25%;
+    left: 40%;
+    background: rgb(255, 255, 255);
+    padding: 1%;
+    border-radius:  5px;
+    box-shadow: 4px 4px 4px rgba(153, 153, 153, 0.5);
+}
+
+.blockSign input {
+    width: 98%;
+    height: 20px;
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid rgba(104, 143, 180, 0.5);
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+button {
+    border-radius:  5px;
+    border: 1px solid rgba(104, 143, 180, 0.5);
+    padding: 5px 10px;
+    background: rgb(224,235,245);
+    font-family: Snell Roundhand, cursive;
+    font-size: 100%;
+    color: rgb(0, 64, 124);
+    cursor: pointer;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.newAcc {
+    display: flex;
+    justify-content: center;
+    margin-top: 65%;
+    cursor: pointer;
+}
+
+.newAcc span {
+    color: rgb(0, 78, 151);
+}

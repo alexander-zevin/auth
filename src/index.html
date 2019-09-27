@@ -1,0 +1,20 @@
+{{ define "index" }}
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>{{.Title}}</title>
+            <link rel="stylesheet" type="text/css" href="static/styles/main.css"/>
+        </head>
+        </body>
+            {{if .Auth}}
+                {{ template "auth"}}
+            {{else}}
+                {{ template "main"}}
+            {{end}}
+            <script src="static/scripts/createAcc.js"></script>
+        </body>
+    </html>
+
+{{end}}
