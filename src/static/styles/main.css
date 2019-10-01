@@ -9,28 +9,28 @@ body {
     font-family: Snell Roundhand, cursive;
 }
 
-.titleBlock {
-    position: absolute;
-    height: 5%;
-    width: 20%;
-    top: 17%;
-    left: 40%;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
+.title {
     font-size: 18pt;
+    margin-bottom: 20px;
+}
+
+main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .blockSign {
-    position: absolute;
     height: 50%;
     width: 20%;
-    top: 25%;
-    left: 40%;
     background: rgb(255, 255, 255);
     padding: 1%;
     border-radius:  5px;
-    box-shadow: 4px 4px 4px rgba(153, 153, 153, 0.5);
+    box-shadow: 6px 6px 6px rgba(153, 153, 153, 0.5);
 }
 
 .blockSign input {
@@ -56,16 +56,68 @@ button {
 
 .flexCenter {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
 }
 
 .newAcc {
     display: flex;
     justify-content: center;
-    margin-top: 65%;
+    margin-top: 35%;
     cursor: pointer;
 }
 
 .newAcc span {
     color: rgb(0, 78, 151);
 }
+
+.blockLoader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #00000049;
+}
+
+.loader {
+    border: 16px solid #ffffff;
+    border-radius: 50%;
+    border-top: 16px solid rgb(61, 129, 192);
+    border-bottom: 16px solid rgb(61, 129, 192);
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .blockMain {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signOut {
+      margin-top: 20px;
+  }
+
+  .Err {
+      margin-top: 5%;
+      color: red;
+  }
+
+

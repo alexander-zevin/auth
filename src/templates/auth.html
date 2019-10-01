@@ -1,11 +1,10 @@
 {{define "auth" }}
 
     <main>
+        
         <!-- Заголовок -->
-        <div class = "titleBlock">
-            <label class = "title">Sign in to site</label>
-        </div>
-
+        <label class = "title">Sign in to your account</label>
+        
         <!-- Вход -->
         <div class = "blockSign">
             <label>Login:</label><br>
@@ -14,6 +13,7 @@
             <input type="password" name="password" maxlength="30"/><br>
             <div class="flexCenter">
                 <button class='auth'>Sign in</button>
+                <div class="Err"></div>
             </div>
             <div class = "newAcc">
                 <span class="createAcc">Create an account</span>

@@ -1,5 +1,4 @@
 {{ define "index" }}
-
     <!DOCTYPE html>
     <html>
         <head>
@@ -13,8 +12,12 @@
             {{else}}
                 {{ template "main"}}
             {{end}}
-            <script src="static/scripts/createAcc.js"></script>
+            <div class="blockLoader">
+                <div class="loader"></div>
+            </div>
+            <script type="text/javascript" src="static/scripts/showSign.js"></script>
+            <script type="text/javascript" src="static/scripts/sign.js"></script>
+            <script type="text/javascript" src="static/scripts/main.js"></script>
         </body>
     </html>
-
 {{end}}
